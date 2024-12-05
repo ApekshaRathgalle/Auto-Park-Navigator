@@ -1,0 +1,76 @@
+section {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #1e1f65;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(201, 35, 35, 0.1);
+   
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #871212;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #151652;
+    color: #cab7c5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  #show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #show-password:hover {
+    color: #307d7f;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: navy;
+    border-top: 1px solid #481868;
+  }
+
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: green; /* Change this to the desired color */
+  }

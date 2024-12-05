@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Park Navigator </title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="nav__links">
+                <div>
+                    <li>
+                        <img src="assets/logo.jpg" alt="logo">
+                    </li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="package.html">Packages</a></li>
+                    <li> <a href="booking.html">Booking</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+                </div>
+                <li><a href="login.html"><i class="ri-login-circle-fill"></i>Log in</a></li>
+                li><a href="cussignup.html"><i class="ri-login-circle-fill"></i>Sign Up</a></li>
+                
+                <li><a href="useraccount.html"><li style="color:azure">User Account</i></li>
+
+
+
+                    
+                <li><a href="admin.html">Admin Account</a><li></li>
+            </ul>
+        </nav>
+        <section class="section__container">
+            
+
+        <section class="section__container">
+            
+            <h2>Booking Your Parking Place</h2>
+            <form action="insert.php" method="post">
+                <div class="form-group">
+                    <label for="firstName">Name:</label>
+                    <input type="text" id="firstName" name="bName" required>
+                </div>
+                <div class="form-group">
+                    <label for="vehicleType">Vehicle Type:</label>
+                    <input type="text" id="vehicleType" name="bVehicleType" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Contact Number:</label>
+                    <input type="tel" id="phoneNumber" name="bContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="bEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date (DD/MM/YY):</label>
+                    <input type="date" id="date" name="bDate"  required>
+                </div>
+                <div class="form-group">
+                    <label for="checkInTime">Check-in Time:</label>
+                    <input type="time" id="checkInTime" name="bcheckin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutTime">Check-out Time:</label>
+                    <input type="time" id="checkOutTime" name="bcheckout" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="acknowledgement" name="acknowledgement" required>
+                    <label for="acknowledgement">I acknowledge that all the information provided above is accurate.</label>
+                    <p class="description">By checking this box, you confirm that the information provided is correct and complete.</p>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the <a href="#">terms and conditions</a>.</label>
+                </div>
+                <button type="submit">Book Now</button> 
+            </form>
+            </section>
+
+            <form action="read.php">
+            <button type="submit" method="post">Read</button>
+            </form>
+<br>
+<br>
+<br>
+
+    
+
+
+</body>
+</html>
+
+<br>
+<br>
+<br>
+<footer class="footer">
+    <p align="center" class="menu-links">
+        <a href="about.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="Terms_and_conditions.html">Terms & Conditions</a>
+        <a href="Privacy_and_Policy.html">Privacy & Policy</a>
+    </p>
+    <br>
+    <p align="center" class="icons">
+        <a href="http://www.facebook.com"><i class="ri-facebook-circle-fill"></i></i></a>
+        <a href="http://www.linkedin.com"><i class="ri-linkedin-fill"></i></i></a>
+        <a href="http://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+        <a href="http://www.whatsapp.com"><i class="ri-whatsapp-fill"></i></a>
+    </p>
+    <p align="center"><img src="assets/bgremove.png" class="no-background" align="center" height="100" width="100"><i class="ri-copyright-line"></i>2024 Auto Park Navigator, Inc. All Rights Reserved.</p> 
+   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

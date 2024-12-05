@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Park Navigator </title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="nav__links">
+                <div>
+                    <li>
+                        <img src="assets/logo.jpg" alt="logo">
+                    </li>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="package.html">Packages</a></li>
+                    <li> <a href="booking.html">Booking</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+                </div>
+                <li><a href="login.html"><i class="ri-login-circle-fill"></i>Log in</a></li>
+                <li><a href="cussignup.html"><i class="ri-login-circle-fill"></i>Sign Up</a></li>
+                
+                    <li><a href="useraccount.html"><li style="color:azure">User Account</i></li>
+                        
+                    <li><a href="admin.html">Admin Account</a><li></li>   
+            </ul>
+        </nav>
+
+
+        <div class="submitform" >
+            <h2 style="font-size: 20 px;" align="center">Sign Up as Customer</h2><br>
+            <form action="insertH.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="cName" required>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="cEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Mobile">Mobile Number</label>
+                    <input type="text" id="MobileNo" name="cMobileNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="VehicalType">Vehicle Type</label>
+                    <input type="text" id="Vehicle Type" name="cVehicleType" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="VehicalNumber">Vehicle Number</label>
+                    <input type="text" id="Vehicle Number" name="cVehiclenumber" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Sign Up">
+                </div>
+
+            </div>
+        </div>
+            </form>
+
+            <form action="readH.php">
+                <div class="form-group">
+                    <input type="submit" value="Read">
+                </div>
+
+            </form>
+           
+
+
+
+
+
+<br>
+<br>
+<br>
+<footer class="footer">
+    <p align="center" class="menu-links">
+        <a href="about.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="Terms_and_conditions.html">Terms & Conditions</a>
+        <a href="Privacy_and_Policy.html">Privacy & Policy</a>
+    </p>
+    <br>
+    <p align="center" class="icons">
+        <a href="http://www.facebook.com"><i class="ri-facebook-circle-fill"></i></i></a>
+        <a href="http://www.linkedin.com"><i class="ri-linkedin-fill"></i></i></a>
+        <a href="http://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+        <a href="http://www.whatsapp.com"><i class="ri-whatsapp-fill"></i></a>
+    </p>
+    
+    <p align="center"><img src="assets/bgremove.png" class="no-background" align="center" height="100" width="100"><i class="ri-copyright-line"></i>2024 Auto Park Navigator, Inc. All Rights Reserved.</p> 
+   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

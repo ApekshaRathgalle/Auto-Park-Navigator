@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+:root{
+--primary-color:#b32557;
+--white:#ffffff;
+--max-width:1200px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Fredoka", sans-serif;
+    background-image: url("assets/header.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    max-width: var(--max-width);
+    margin: auto;
+    overflow:hidden;
+}
+
+nav{
+    padding: 2rem 1rem;
+    overflow:hidden;
+}
+
+.nav__links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.nav__links > div li:not(:first-child){
+    display:none;
+}
+
+.nav__links img{
+    max-width:50px;
+}
+
+.nav__links a{
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.nav__links a::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left:0;
+    
+    width:0;
+    background-color: var(--white);
+    transition:0.3s;
+}
+
+.nav__links a:hover::after{
+    width:100%;
+}
+
+.section__container{
+    flex: 1;
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__container h3{
+    margin-bottom: 1rem;
+    font-size:1.5 rem;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.section__container h1,
+.section__container h2{
+    font-size: 4rem;
+    font-weight:600;
+    color: var(--white);
+    line-height: 4rem;
+}
+.section__container h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--white);
+}
+
+.section__container button{
+    max-width: fit-content;
+    margin-block: 5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--white);
+    cursor: pointer;
+}
+
+.section__container button span{
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+
+
+
+.socials {
+    color: white;
+}
+
+@media(width > 540px){
+    .section__container h1,
+    .section__container h2{
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+}
+
+@media(width > 768px) {
+    .nav__links > div li:not(:first-child){
+        display: block;
+    }
+
+    .nav__links >div{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .section__container h1,
+    .section__container h2{
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+}
+
+.footer{
+    color: #ffffff;
+}
+.no-background {
+    background-color: transparent;
+    border: none;
+}
+
+.menu-links a {
+    margin-right: 20px; 
+    color:#ffffff;
+}
+
+.icons a {
+    margin-right: 20px; 
+    color:#ffffff;
+}
+
+.icons a i {
+    font-size: 24px; /* Adjust the value as needed */
+}
+
+.image img{
+    display: inline-block;
+    margin-right:25px;
+}
+
+
+.image {
+    display: flex;
+}
+
+.image img {
+    margin-right: 10px; /* Add spacing between images */
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.image img:hover {
+    border-color: white; /* Change border color to white on hover */
+    animation: up-down 0.3s ease infinite alternate; /* Apply animation on hover */
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0); 
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.paragraph{
+    color:#ffffff;
+    font-size: 25px;
+}
+
+.contact-image {
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.contact-image:hover {
+    border-color: white; /* Change border color to white on hover */
+    animation: up-down 0.3s ease infinite alternate; /* Apply animation on hover */
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    100% {
+        transform: translateY(-5px); /* Move up by 5 pixels */
+    }
+}
+
+.submitform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    /*display: block;*/
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    /*border: 1px solid #ccc;*/
+   /* border-radius: 5px;*/
+}
+
+.form-group textarea {
+    height: 100px; /* Change the height as needed */
+}
+
+.form-group input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for the payment form */
+.payment-options, form {
+    max-width: 600px;
+    margin: 0 auto;
+    color:#fff
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-group .description {
+    font-size: 14px;
+    color: #fefefe;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the booking form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-group .description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
